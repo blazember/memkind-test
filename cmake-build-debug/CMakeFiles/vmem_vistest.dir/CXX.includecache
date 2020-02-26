@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/libpmem.h
+sys/types.h
+-
+pmemcompat.h
+-
+
+../lib/libvmem.h
+sys/types.h
+-
+stddef.h
+-
+
+/home/blaze/work/hazelcast/memkind-test/src/vmem_vistest.cpp
+libpmem.h
+-
+libvmem.h
+-
+iostream
+-
+string
+-
+unistd.h
+-
+climits
+-
+cstring
+-
+

@@ -1,0 +1,4 @@
+/home/blaze/work/hazelcast/memkind-test/CMakeFiles/rebuild_cache.dir
+/home/blaze/work/hazelcast/memkind-test/CMakeFiles/edit_cache.dir
+/home/blaze/work/hazelcast/memkind-test/CMakeFiles/pmem_vistest.dir
+/home/blaze/work/hazelcast/memkind-test/CMakeFiles/memkind_test.dir

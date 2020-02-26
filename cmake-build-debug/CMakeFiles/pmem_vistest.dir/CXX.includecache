@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/libpmem.h
+sys/types.h
+-
+pmemcompat.h
+-
+
+../lib/memkind.h
+sys/types.h
+-
+memkind_deprecated.h
+../lib/memkind_deprecated.h
+
+../lib/memkind_deprecated.h
+
+/home/blaze/work/hazelcast/memkind-test/src/pmem_vistest.cpp
+memkind.h
+-
+libpmem.h
+-
+iostream
+-
+string
+-
+unistd.h
+-
+climits
+-
+cstring
+-
+

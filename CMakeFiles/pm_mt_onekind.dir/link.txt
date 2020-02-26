@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/pm_mt_onekind.dir/src/pmem_multithreads_onekind.cpp.o  -o pm_mt_onekind 

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/blaze/work/hazelcast/memkind-test/create_file.cpp
+iostream
+-
+fstream
+-
+string
+-
+unistd.h
+-
+cstring
+-
+thread
+-
+chrono
+-
+

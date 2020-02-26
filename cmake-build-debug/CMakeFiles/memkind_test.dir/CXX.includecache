@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/blaze/work/hazelcast/memkind-test/src/mmap_test.cpp
+stdio.h
+-
+string.h
+-
+sys/mman.h
+-
+unistd.h
+-
+fcntl.h
+-
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmemkind2.a  CMakeFiles/memkind2.dir/src/pmem_vistest.cpp.o
+/usr/bin/ranlib libmemkind2.a

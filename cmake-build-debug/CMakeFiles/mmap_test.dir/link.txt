@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/mmap_test.dir/src/mmap_test.cpp.o  -o ../bin/mmap_test -ldl 

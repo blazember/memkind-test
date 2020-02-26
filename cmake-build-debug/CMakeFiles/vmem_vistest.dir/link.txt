@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/vmem_vistest.dir/src/vmem_vistest.cpp.o  -o ../bin/vmem_vistest ../lib/libmemkind.a ../lib/libpmem.a ../lib/libvmem.a /usr/lib/x86_64-linux-gnu/libnuma.so -ldl -pthread 

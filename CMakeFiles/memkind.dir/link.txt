@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmemkind.a  CMakeFiles/memkind.dir/src/main.cpp.o CMakeFiles/memkind.dir/src/pmem_vistest.cpp.o CMakeFiles/memkind.dir/src/pmem_multithreads_onekind.cpp.o
+/usr/bin/ranlib libmemkind.a

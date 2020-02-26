@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/memkind_test.dir/src/main.cpp.o  -o bin/memkind_test lib/libmemkind.a /usr/lib/x86_64-linux-gnu/libnuma.so -ldl -pthread 

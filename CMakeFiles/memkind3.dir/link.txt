@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmemkind3.a  CMakeFiles/memkind3.dir/src/main.cpp.o
+/usr/bin/ranlib libmemkind3.a

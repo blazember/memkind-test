@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmemkind1.a  CMakeFiles/memkind1.dir/src/pmem_multithreads_onekind.cpp.o
+/usr/bin/ranlib libmemkind1.a
