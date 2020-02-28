@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/memkind.h
+sys/types.h
+-
+memkind_deprecated.h
+../lib/memkind_deprecated.h
+
+../lib/memkind_deprecated.h
+
+/home/blaze/work/hazelcast/memkind-test/src/dax.cpp
+memkind.h
+-
+limits.h
+-
+stdio.h
+-
+stdlib.h
+-
+

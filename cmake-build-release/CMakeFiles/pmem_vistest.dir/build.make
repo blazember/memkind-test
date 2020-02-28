@@ -83,6 +83,7 @@ pmem_vistest_EXTERNAL_OBJECTS =
 ../bin/pmem_vistest: ../lib/libpmem.a
 ../bin/pmem_vistest: ../lib/libvmem.a
 ../bin/pmem_vistest: /usr/lib/x86_64-linux-gnu/libnuma.so
+../bin/pmem_vistest: /usr/lib/x86_64-linux-gnu/libdaxctl.so
 ../bin/pmem_vistest: CMakeFiles/pmem_vistest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/blaze/work/hazelcast/memkind-test/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/pmem_vistest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pmem_vistest.dir/link.txt --verbose=$(VERBOSE)

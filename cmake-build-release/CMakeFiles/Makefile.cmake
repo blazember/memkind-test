@@ -39,6 +39,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.14.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeSystem.cmake"
+  "../cmake/modules/FindDaxctl.cmake"
   "../cmake/modules/FindNuma.cmake"
   )
 
@@ -57,4 +58,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/pmem_vistest.dir/DependInfo.cmake"
   "CMakeFiles/vmem_vistest.dir/DependInfo.cmake"
+  "CMakeFiles/dax_kmem_test.dir/DependInfo.cmake"
   )

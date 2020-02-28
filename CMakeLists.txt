@@ -13,11 +13,15 @@ find_library(VMEM vmem lib)
 
 find_package(Threads REQUIRED)
 find_package(Numa REQUIRED)
+find_package(Daxctl REQUIRED)
 
 include_directories(lib)
 
 add_executable(pmem_vistest src/pmem_vistest.cpp)
-target_link_libraries(pmem_vistest LINK_PUBLIC ${MEMKIND} ${PMEM} ${VMEM} ${NUMA} ${CMAKE_DL_LIBS} Threads::Threads)
+target_link_libraries(pmem_vistest LINK_PUBLIC ${MEMKIND} ${PMEM} ${VMEM} ${NUMA} ${DAXCTL} ${CMAKE_DL_LIBS} Threads::Threads)
+
+add_executable(dax_kmem_test src/dax_kmem_test.cpp)
+target_link_libraries(dax_kmem_test LINK_PUBLIC ${MEMKIND} ${NUMA} ${DAXCTL} ${CMAKE_DL_LIBS} Threads::Threads)
 
 add_executable(vmem_vistest src/vmem_vistest.cpp)
 target_link_libraries(vmem_vistest LINK_PUBLIC ${MEMKIND} ${PMEM} ${VMEM} ${NUMA} ${CMAKE_DL_LIBS} Threads::Threads)

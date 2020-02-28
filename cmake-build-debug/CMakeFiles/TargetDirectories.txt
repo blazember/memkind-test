@@ -2,3 +2,4 @@
 /home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles/pmem_vistest.dir
 /home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles/vmem_vistest.dir
+/home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles/dax_kmem_test.dir

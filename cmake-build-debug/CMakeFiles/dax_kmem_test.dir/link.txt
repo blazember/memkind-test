@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/dax_kmem_test.dir/src/dax_kmem_test.cpp.o  -o ../bin/dax_kmem_test ../lib/libmemkind.a /usr/lib/x86_64-linux-gnu/libnuma.so /usr/lib/x86_64-linux-gnu/libdaxctl.so -ldl -pthread 

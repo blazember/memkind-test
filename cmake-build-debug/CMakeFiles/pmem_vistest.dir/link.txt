@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/pmem_vistest.dir/src/pmem_vistest.cpp.o  -o ../bin/pmem_vistest ../lib/libmemkind.a ../lib/libpmem.a ../lib/libvmem.a /usr/lib/x86_64-linux-gnu/libnuma.so -ldl -pthread 
+/usr/bin/c++  -g   CMakeFiles/pmem_vistest.dir/src/pmem_vistest.cpp.o  -o ../bin/pmem_vistest ../lib/libmemkind.a ../lib/libpmem.a ../lib/libvmem.a /usr/lib/x86_64-linux-gnu/libnuma.so /usr/lib/x86_64-linux-gnu/libdaxctl.so -ldl -pthread 

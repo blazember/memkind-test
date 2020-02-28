@@ -211,11 +211,26 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//DAXCTL library
+DAXCTL:FILEPATH=/usr/lib/x86_64-linux-gnu/libdaxctl.so
+
+//DAXCTL include directory
+DAXCTL_INCLUDE_DIR:PATH=DAXCTL_INCLUDE_DIR-NOTFOUND
+
+//DAXCTL root directory
+DAXCTL_ROOT_DIR:PATH=DAXCTL_ROOT_DIR-NOTFOUND
+
 //Path to a library.
 LIBMEMKIND:FILEPATH=LIBMEMKIND-NOTFOUND
 
 //The directory containing a CMake configuration file for LibNuma.
 LibNuma_DIR:PATH=LibNuma_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for Lib.
+Lib_DIR:PATH=Lib_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for Libdaxctl.
+Libdaxctl_DIR:PATH=Libdaxctl_DIR-NOTFOUND
 
 //Path to a library.
 MEMKIND:FILEPATH=/home/blaze/work/hazelcast/memkind-test/lib/libmemkind.a

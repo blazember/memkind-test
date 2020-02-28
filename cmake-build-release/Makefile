@@ -136,6 +136,46 @@ vmem_vistest/fast:
 	$(MAKE) -f CMakeFiles/vmem_vistest.dir/build.make CMakeFiles/vmem_vistest.dir/build
 .PHONY : vmem_vistest/fast
 
+#=============================================================================
+# Target rules for targets named dax_kmem_test
+
+# Build rule for target.
+dax_kmem_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dax_kmem_test
+.PHONY : dax_kmem_test
+
+# fast build rule for target.
+dax_kmem_test/fast:
+	$(MAKE) -f CMakeFiles/dax_kmem_test.dir/build.make CMakeFiles/dax_kmem_test.dir/build
+.PHONY : dax_kmem_test/fast
+
+src/dax_kmem_test.o: src/dax_kmem_test.cpp.o
+
+.PHONY : src/dax_kmem_test.o
+
+# target to build an object file
+src/dax_kmem_test.cpp.o:
+	$(MAKE) -f CMakeFiles/dax_kmem_test.dir/build.make CMakeFiles/dax_kmem_test.dir/src/dax_kmem_test.cpp.o
+.PHONY : src/dax_kmem_test.cpp.o
+
+src/dax_kmem_test.i: src/dax_kmem_test.cpp.i
+
+.PHONY : src/dax_kmem_test.i
+
+# target to preprocess a source file
+src/dax_kmem_test.cpp.i:
+	$(MAKE) -f CMakeFiles/dax_kmem_test.dir/build.make CMakeFiles/dax_kmem_test.dir/src/dax_kmem_test.cpp.i
+.PHONY : src/dax_kmem_test.cpp.i
+
+src/dax_kmem_test.s: src/dax_kmem_test.cpp.s
+
+.PHONY : src/dax_kmem_test.s
+
+# target to generate assembly for a file
+src/dax_kmem_test.cpp.s:
+	$(MAKE) -f CMakeFiles/dax_kmem_test.dir/build.make CMakeFiles/dax_kmem_test.dir/src/dax_kmem_test.cpp.s
+.PHONY : src/dax_kmem_test.cpp.s
+
 src/pmem_vistest.o: src/pmem_vistest.cpp.o
 
 .PHONY : src/pmem_vistest.o
@@ -200,6 +240,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... pmem_vistest"
 	@echo "... vmem_vistest"
+	@echo "... dax_kmem_test"
+	@echo "... src/dax_kmem_test.o"
+	@echo "... src/dax_kmem_test.i"
+	@echo "... src/dax_kmem_test.s"
 	@echo "... src/pmem_vistest.o"
 	@echo "... src/pmem_vistest.i"
 	@echo "... src/pmem_vistest.s"
