@@ -10,7 +10,10 @@
 using namespace std;
 
 static char path[PATH_MAX]="/tmp/";
-static const size_t PMEM_PART_SIZE = MEMKIND_PMEM_MIN_SIZE + 4 * 1024;
+const long long GB = 1024 * 1024 * 1024;
+const long long TB1 = 1024 * GB;
+static const size_t PMEM_PART_SIZE = TB1;
+//static const size_t PMEM_PART_SIZE = MEMKIND_PMEM_MIN_SIZE + 4 * 1024;
 
 static void print_err_message(int err)
 {
@@ -32,16 +35,12 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    fprintf(stdout,
-            "This example shows how to use memkind_free with unknown kind as a parameter.\n");
-
-
     string file_name = "/test.tst";
     string file_path = path + file_name;
     int is_pmem;
     size_t mapped_len = 0;
     void* mapped_addr;
-    mapped_addr = pmem_map_file(file_path.c_str(), (size_t) PMEM_PART_SIZE, PMEM_FILE_CREATE, 0666, &mapped_len, &is_pmem);
+    mapped_addr = pmem_map_file(file_path.c_str(), (size_t) PMEM_PART_SIZE, PMEM_FILE_CREATE, 0600, &mapped_len, &is_pmem);
 
     if (mapped_addr == NULL) {
         cout << "Could not map file with libpmem. Mapped len is " << mapped_len << endl;
@@ -86,27 +85,5 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    cout << "Memory was successfully released." << endl;
-
-    cout << "Testing DAX_KMEM mode " << endl << "<press any key to test>"<< flush;
-    cin.get();
-
-    char *ptr2 = static_cast<char *>(memkind_malloc(MEMKIND_DAX_KMEM, hello_world.size()));
-
-    if (ptr2 == NULL){
-        cout << "Could not allocate DAX_KMEM kind memory" << endl;
-        return 1;
-    }
-
-    kind_type = memkind_detect_kind(ptr2);
-
-    if (kind_type == MEMKIND_DAX_KMEM) {
-        kind_type_str = "DAX_KMEM";
-    } else {
-        kind_type_str = "NOT DAX_KMEM";
-    }
-
-    cout << "Created " << kind_type_str << " kind" << endl << "<press any key to exit>" << endl << flush;
-    memkind_free(MEMKIND_DAX_KMEM, ptr);
     cout << "Memory was successfully released." << endl;
 }
