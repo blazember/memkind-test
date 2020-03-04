@@ -56,7 +56,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/pmem_vistest.dir/DependInfo.cmake"
   "CMakeFiles/vmem_vistest.dir/DependInfo.cmake"
   "CMakeFiles/dax_kmem_test.dir/DependInfo.cmake"
+  "CMakeFiles/pmem_vistest.dir/DependInfo.cmake"
+  "CMakeFiles/alloc_huge.dir/DependInfo.cmake"
   )

@@ -65,50 +65,13 @@ CMAKE_SOURCE_DIR = /home/blaze/work/hazelcast/memkind-test
 CMAKE_BINARY_DIR = /home/blaze/work/hazelcast/memkind-test/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/pmem_vistest.dir
-
-# All Build rule for target.
-CMakeFiles/pmem_vistest.dir/all:
-	$(MAKE) -f CMakeFiles/pmem_vistest.dir/build.make CMakeFiles/pmem_vistest.dir/depend
-	$(MAKE) -f CMakeFiles/pmem_vistest.dir/build.make CMakeFiles/pmem_vistest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target pmem_vistest"
-.PHONY : CMakeFiles/pmem_vistest.dir/all
-
-# Include target in all.
-all: CMakeFiles/pmem_vistest.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/pmem_vistest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pmem_vistest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/pmem_vistest.dir/rule
-
-# Convenience name for target.
-pmem_vistest: CMakeFiles/pmem_vistest.dir/rule
-
-.PHONY : pmem_vistest
-
-# clean rule for target.
-CMakeFiles/pmem_vistest.dir/clean:
-	$(MAKE) -f CMakeFiles/pmem_vistest.dir/build.make CMakeFiles/pmem_vistest.dir/clean
-.PHONY : CMakeFiles/pmem_vistest.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/pmem_vistest.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/vmem_vistest.dir
 
 # All Build rule for target.
 CMakeFiles/vmem_vistest.dir/all:
 	$(MAKE) -f CMakeFiles/vmem_vistest.dir/build.make CMakeFiles/vmem_vistest.dir/depend
 	$(MAKE) -f CMakeFiles/vmem_vistest.dir/build.make CMakeFiles/vmem_vistest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target vmem_vistest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target vmem_vistest"
 .PHONY : CMakeFiles/vmem_vistest.dir/all
 
 # Include target in all.
@@ -145,7 +108,7 @@ clean: CMakeFiles/vmem_vistest.dir/clean
 CMakeFiles/dax_kmem_test.dir/all:
 	$(MAKE) -f CMakeFiles/dax_kmem_test.dir/build.make CMakeFiles/dax_kmem_test.dir/depend
 	$(MAKE) -f CMakeFiles/dax_kmem_test.dir/build.make CMakeFiles/dax_kmem_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target dax_kmem_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target dax_kmem_test"
 .PHONY : CMakeFiles/dax_kmem_test.dir/all
 
 # Include target in all.
@@ -172,6 +135,80 @@ CMakeFiles/dax_kmem_test.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/dax_kmem_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pmem_vistest.dir
+
+# All Build rule for target.
+CMakeFiles/pmem_vistest.dir/all:
+	$(MAKE) -f CMakeFiles/pmem_vistest.dir/build.make CMakeFiles/pmem_vistest.dir/depend
+	$(MAKE) -f CMakeFiles/pmem_vistest.dir/build.make CMakeFiles/pmem_vistest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target pmem_vistest"
+.PHONY : CMakeFiles/pmem_vistest.dir/all
+
+# Include target in all.
+all: CMakeFiles/pmem_vistest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pmem_vistest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pmem_vistest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/pmem_vistest.dir/rule
+
+# Convenience name for target.
+pmem_vistest: CMakeFiles/pmem_vistest.dir/rule
+
+.PHONY : pmem_vistest
+
+# clean rule for target.
+CMakeFiles/pmem_vistest.dir/clean:
+	$(MAKE) -f CMakeFiles/pmem_vistest.dir/build.make CMakeFiles/pmem_vistest.dir/clean
+.PHONY : CMakeFiles/pmem_vistest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pmem_vistest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/alloc_huge.dir
+
+# All Build rule for target.
+CMakeFiles/alloc_huge.dir/all:
+	$(MAKE) -f CMakeFiles/alloc_huge.dir/build.make CMakeFiles/alloc_huge.dir/depend
+	$(MAKE) -f CMakeFiles/alloc_huge.dir/build.make CMakeFiles/alloc_huge.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target alloc_huge"
+.PHONY : CMakeFiles/alloc_huge.dir/all
+
+# Include target in all.
+all: CMakeFiles/alloc_huge.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/alloc_huge.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/alloc_huge.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blaze/work/hazelcast/memkind-test/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/alloc_huge.dir/rule
+
+# Convenience name for target.
+alloc_huge: CMakeFiles/alloc_huge.dir/rule
+
+.PHONY : alloc_huge
+
+# clean rule for target.
+CMakeFiles/alloc_huge.dir/clean:
+	$(MAKE) -f CMakeFiles/alloc_huge.dir/build.make CMakeFiles/alloc_huge.dir/clean
+.PHONY : CMakeFiles/alloc_huge.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/alloc_huge.dir/clean
 
 .PHONY : clean
 

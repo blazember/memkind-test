@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/alloc_huge.dir/src/alloc_huge.cpp.o  -o ../bin/alloc_huge 

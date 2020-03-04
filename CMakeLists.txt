@@ -20,6 +20,9 @@ include_directories(lib)
 add_executable(pmem_vistest src/pmem_vistest.cpp)
 target_link_libraries(pmem_vistest LINK_PUBLIC ${MEMKIND} ${PMEM} ${VMEM} ${NUMA} ${DAXCTL} ${CMAKE_DL_LIBS} Threads::Threads)
 
+add_executable(alloc_huge src/alloc_huge.cpp)
+target_link_libraries(pmem_vistest LINK_PUBLIC)
+
 add_executable(dax_kmem_test src/dax_kmem_test.cpp)
 target_link_libraries(dax_kmem_test LINK_PUBLIC ${MEMKIND} ${NUMA} ${DAXCTL} ${CMAKE_DL_LIBS} Threads::Threads)
 

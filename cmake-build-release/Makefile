@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pmem_vistest
-
-# Build rule for target.
-pmem_vistest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pmem_vistest
-.PHONY : pmem_vistest
-
-# fast build rule for target.
-pmem_vistest/fast:
-	$(MAKE) -f CMakeFiles/pmem_vistest.dir/build.make CMakeFiles/pmem_vistest.dir/build
-.PHONY : pmem_vistest/fast
-
-#=============================================================================
 # Target rules for targets named vmem_vistest
 
 # Build rule for target.
@@ -148,6 +135,59 @@ dax_kmem_test: cmake_check_build_system
 dax_kmem_test/fast:
 	$(MAKE) -f CMakeFiles/dax_kmem_test.dir/build.make CMakeFiles/dax_kmem_test.dir/build
 .PHONY : dax_kmem_test/fast
+
+#=============================================================================
+# Target rules for targets named pmem_vistest
+
+# Build rule for target.
+pmem_vistest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pmem_vistest
+.PHONY : pmem_vistest
+
+# fast build rule for target.
+pmem_vistest/fast:
+	$(MAKE) -f CMakeFiles/pmem_vistest.dir/build.make CMakeFiles/pmem_vistest.dir/build
+.PHONY : pmem_vistest/fast
+
+#=============================================================================
+# Target rules for targets named alloc_huge
+
+# Build rule for target.
+alloc_huge: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 alloc_huge
+.PHONY : alloc_huge
+
+# fast build rule for target.
+alloc_huge/fast:
+	$(MAKE) -f CMakeFiles/alloc_huge.dir/build.make CMakeFiles/alloc_huge.dir/build
+.PHONY : alloc_huge/fast
+
+src/alloc_huge.o: src/alloc_huge.cpp.o
+
+.PHONY : src/alloc_huge.o
+
+# target to build an object file
+src/alloc_huge.cpp.o:
+	$(MAKE) -f CMakeFiles/alloc_huge.dir/build.make CMakeFiles/alloc_huge.dir/src/alloc_huge.cpp.o
+.PHONY : src/alloc_huge.cpp.o
+
+src/alloc_huge.i: src/alloc_huge.cpp.i
+
+.PHONY : src/alloc_huge.i
+
+# target to preprocess a source file
+src/alloc_huge.cpp.i:
+	$(MAKE) -f CMakeFiles/alloc_huge.dir/build.make CMakeFiles/alloc_huge.dir/src/alloc_huge.cpp.i
+.PHONY : src/alloc_huge.cpp.i
+
+src/alloc_huge.s: src/alloc_huge.cpp.s
+
+.PHONY : src/alloc_huge.s
+
+# target to generate assembly for a file
+src/alloc_huge.cpp.s:
+	$(MAKE) -f CMakeFiles/alloc_huge.dir/build.make CMakeFiles/alloc_huge.dir/src/alloc_huge.cpp.s
+.PHONY : src/alloc_huge.cpp.s
 
 src/dax_kmem_test.o: src/dax_kmem_test.cpp.o
 
@@ -238,9 +278,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... pmem_vistest"
 	@echo "... vmem_vistest"
 	@echo "... dax_kmem_test"
+	@echo "... pmem_vistest"
+	@echo "... alloc_huge"
+	@echo "... src/alloc_huge.o"
+	@echo "... src/alloc_huge.i"
+	@echo "... src/alloc_huge.s"
 	@echo "... src/dax_kmem_test.o"
 	@echo "... src/dax_kmem_test.i"
 	@echo "... src/dax_kmem_test.s"

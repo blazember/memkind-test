@@ -1,5 +1,6 @@
 /home/blaze/work/hazelcast/memkind-test/cmake-build-release/CMakeFiles/rebuild_cache.dir
 /home/blaze/work/hazelcast/memkind-test/cmake-build-release/CMakeFiles/edit_cache.dir
-/home/blaze/work/hazelcast/memkind-test/cmake-build-release/CMakeFiles/pmem_vistest.dir
 /home/blaze/work/hazelcast/memkind-test/cmake-build-release/CMakeFiles/vmem_vistest.dir
 /home/blaze/work/hazelcast/memkind-test/cmake-build-release/CMakeFiles/dax_kmem_test.dir
+/home/blaze/work/hazelcast/memkind-test/cmake-build-release/CMakeFiles/pmem_vistest.dir
+/home/blaze/work/hazelcast/memkind-test/cmake-build-release/CMakeFiles/alloc_huge.dir
